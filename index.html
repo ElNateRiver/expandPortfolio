@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daniel Legaspi V | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Daniel Legaspi V</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hi, I'm Daniel Legaspi V</h2>
+      <p>A Full-Stack Web Developer & Creative Designer</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate web developer with a strong eye for design and creativity. 
+        I specialize in building responsive websites and crafting engaging visual content 
+        through graphic design and video editing. With a blend of technical and artistic skills, 
+        I bring ideas to life across digital platforms.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-code fa-3x"></i>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-paint-brush fa-3x"></i>
+          <h3>Graphic Design</h3>
+          <p>Photoshop, Illustrator, Figma, Canva</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-film fa-3x"></i>
+          <h3>Video Editing</h3>
+          <p>Premiere Pro, After Effects, DaVinci Resolve</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="section portfolio">
+  <div class="container">
+    <h2>My Portfolio</h2>
+    <div class="portfolio-grid">
+      <!-- Web Dev Project -->
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Responsive Website" />
+        <h3>Responsive Website</h3>
+        <p>Frontend development for a travel blog using HTML, CSS, and JS.</p>
+      </div>
+
+      <!-- Graphic Design -->
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo Design" />
+        <h3>Logo & Brand Identity</h3>
+        <p>Created a modern logo and branding kit for a wellness startup.</p>
+      </div>
+
+      <!-- Drone Video Edit -->
+      <div class="portfolio-item">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/4qYXZ7RuDZg?showinfo=0" 
+          title="Drone Sunset Video Edit" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <h3>Drone Video Edit</h3>
+        <p>Color grading and stabilization of a sunset drone footage.</p>
+      </div>
+
+      <!-- App UI Design - FIXED IMAGE -->
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/17921664/pexels-photo-17921664/free-photo-of-smartphone-with-financial-app-on-the-screen.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Finance App UI" />
+        <h3>Finance App UI</h3>
+        <p>Designed a clean, user-friendly interface for a budgeting app.</p>
+      </div>
+
+      <!-- Branding Kit -->
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Branding Kit" />
+        <h3>Corporate Branding</h3>
+        <p>Full branding package including business cards, letterhead, and style guide.</p>
+      </div>
+
+      <!-- Motion Graphics Reel -->
+      <div class="portfolio-item">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/1cTvlr-2Pxc?showinfo=0" 
+          title="Motion Graphics Reel" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <h3>Motion Graphics Reel</h3>
+        <p>After Effects animations for social media promotions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Let's work together! Reach out for collaborations or projects.</p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +63 939 516 4680</p>
+        <p><i class="fas fa-envelope"></i> dglv.nexus@gmail.com</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:dglv.nexus@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="tel:+639395164680"><i class="fas fa-phone fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Daniel Legaspi V. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
